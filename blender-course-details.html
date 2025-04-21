@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерное моделирование | CreativeTech</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .lecture-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .lecture-card {
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .lecture-header {
+            background-color: #4cc9f0;
+            color: white;
+            padding: 15px;
+        }
+        .lecture-content {
+            padding: 20px;
+            background-color: white;
+        }
+        .lecture-image {
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="w3-bar w3-light-grey">
+        <a href="index.html" class="w3-bar-item w3-button">Главная</a>
+        <a href="courses.html" class="w3-bar-item w3-button">Все курсы</a>
+       
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="lecture-container">
+        <!-- Лекция 1 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 1: Введение в Blender</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>1.1 Что такое Blender?</h3>
+                <p>Blender - это бесплатный и открытый 3D-редактор, который поддерживает весь 3D-конвейер: моделирование, риггинг, анимацию, симуляцию, рендеринг, композитинг и отслеживание движения.</p>
+                
+                <img src="https://i.ytimg.com/vi/2tlRurEO8k4/maxresdefault.jpg" alt="Интерфейс Blender" class="lecture-image">
+                
+                <h3>1.2 Основные элементы интерфейса</h3>
+                <p>Интерфейс Blender состоит из нескольких основных областей:</p>
+                <ul class="w3-ul">
+                    <li><strong>3D Viewport</strong> - основная рабочая область</li>
+                    <li><strong>Outliner</strong> - список всех объектов в сцене</li>
+                    <li><strong>Properties</strong> - панель свойств объекта</li>
+                    <li><strong>Timeline</strong> - для работы с анимацией</li>
+                </ul>
+                
+                <div class="w3-panel w3-light-grey w3-leftbar w3-border-blue">
+                    <p><i class="fas fa-lightbulb"></i> <strong>Совет:</strong> Используйте колесико мыши для масштабирования и среднюю кнопку мыши для вращения вида.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Лекция 2 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 2: Основы моделирования</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>2.1 Работа с примитивами</h3>
+                <p>Blender предоставляет несколько базовых объектов (примитивов):</p>
+                
+                <div class="w3-row-padding">
+                    <div class="w3-col m4">
+                        <img src="https://avatars.mds.yandex.net/i?id=cae0bcb93d32c8d25d80c4cd9f1d8c16_l-12569850-images-thumbs&n=13" alt="Куб" class="lecture-image">
+                        <p>Куб - основа для многих моделей</p>
+                    </div>
+                    <div class="w3-col m4">
+                        <img src="https://avatars.mds.yandex.net/i?id=1527f15c206b31598378030693ec3311_l-5222489-images-thumbs&n=13" alt="Сфера" class="lecture-image">
+                        <p>Сфера - для круглых объектов</p>
+                    </div>
+                    <div class="w3-col m4">
+                        <img src="https://www.bestfree.ru/soft/graph/Blender_22.png" alt="Цилиндр" class="lecture-image">
+                        <p>Цилиндр - для трубчатых форм</p>
+                    </div>
+                </div>
+                
+                <h3>2.2 Режимы редактирования</h3>
+                <p>В Blender есть два основных режима работы с объектами:</p>
+                <ol class="w3-ul">
+                    <li><strong>Object Mode</strong> - для работы с целыми объектами</li>
+                    <li><strong>Edit Mode</strong> - для редактирования вершин, ребер и граней</li>
+                </ol>
+                
+                <div class="w3-panel w3-blue w3-round">
+                    <h4>Практическое задание</h4>
+                    <p>Создайте композицию из трех разных примитивов. Попробуйте перемещать, вращать и масштабировать их.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Лекция 3 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 3: Модификаторы</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>3.1 Что такое модификаторы?</h3>
+                <p>Модификаторы - это автоматические операции, которые неразрушающим способом влияют на объект.</p>
+                
+                <h3>3.2 Популярные модификаторы</h3>
+                <table class="w3-table-all">
+                    <tr>
+                        <th>Модификатор</th>
+                        <th>Описание</th>
+                    </tr>
+                    <tr>
+                        <td>Subdivision Surface</td>
+                        <td>Добавляет детализацию, сглаживая поверхность</td>
+                    </tr>
+                    <tr>
+                        <td>Mirror</td>
+                        <td>Создает зеркальную копию объекта</td>
+                    </tr>
+                    <tr>
+                        <td>Array</td>
+                        <td>Создает массив копий объекта</td>
+                    </tr>
+                    <tr>
+                        <td>Boolean</td>
+                        <td>Объединяет или вычитает объекты</td>
+                    </tr>
+                </table>
+                
+                <div class="w3-panel w3-light-grey">
+                    <h4>Пример кода:</h4>
+                    <div class="w3-code">
+                        # Пример использования модификатора в Python API<br>
+                        import bpy<br>
+                        obj = bpy.context.object<br>
+                        mod = obj.modifiers.new(name="MySubdiv", type='SUBSURF')<br>
+                        mod.levels = 2
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+
+    <!-- Подвал -->
+    <footer class="w3-container w3-dark-grey w3-center w3-padding-16">
+        <p>© 2025 CreativeTech. Все права защищены.</p>
+    </footer>
+</body>
+</html>

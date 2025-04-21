@@ -1,0 +1,54 @@
+/* Дополнительные стили для улучшения внешнего вида */
+.w3-card {
+    transition: transform 0.3s;
+}
+
+.w3-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.w3-code {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4CAF50;
+    padding: 16px;
+    font-family: Consolas, "courier new";
+    font-size: 16px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+/* Адаптивность */
+@media screen and (max-width: 992px) {
+    .w3-third {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+/* Анимация кнопок */
+.w3-button {
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Анимация для модальных окон */
+.w3-animate-opacity {
+    animation: opac 0.3s;
+}
+
+@keyframes opac {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+/* Стили для форм */
+.w3-review-form {
+    display: none;
+    animation: opac 0.3s;
+}
+
+/* Аккордеон */
+.w3-accordion-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}

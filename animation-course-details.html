@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерная анимация | CreativeTech</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .lecture-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .lecture-card {
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .lecture-header {
+            background-color: #ff9800; /* Orange */
+            color: white;
+            padding: 15px;
+        }
+        .lecture-content {
+            padding: 20px;
+            background-color: white;
+        }
+        .lecture-image {
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .principle-card {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #ff9800;
+            background-color: #fff8e1;
+        }
+        .software-card {
+            border: 1px solid #ff9800;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="w3-bar w3-light-grey">
+        <a href="index.html" class="w3-bar-item w3-button">Главная</a>
+        <a href="courses.html" class="w3-bar-item w3-button">Все курсы</a>
+      
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="lecture-container">
+        <!-- Лекция 1 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 1: Основы анимации</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>1.1 Что такое компьютерная анимация?</h3>
+                <p>Компьютерная анимация - это процесс создания движущихся изображений с использованием компьютерных технологий. Она широко используется в кино, играх, рекламе и мультимедиа.</p>
+                
+                <div class="w3-row-padding">
+                    <div class="w3-col m6">
+                        <img src="https://avatars.mds.yandex.net/i?id=3dc794511f69e5510e01ce0ffda8b8a8_l-5229803-images-thumbs&n=13" alt="2D анимация" class="lecture-image">
+                        <p class="w3-center"><em>2D анимация (плоское изображение)</em></p>
+                    </div>
+                    <div class="w3-col m6">
+                        <img src="https://avatars.mds.yandex.net/i?id=4a4d25383d82590b83d2ff7094e68f9d_l-5363169-images-thumbs&n=13" alt="3D анимация" class="lecture-image">
+                        <p class="w3-center"><em>3D анимация (объемное изображение)</em></p>
+                    </div>
+                </div>
+                
+                <h3>1.2 12 принципов анимации</h3>
+                <p>Основополагающие принципы, разработанные аниматорами Disney:</p>
+                
+                <div class="principle-card">
+                    <h4><i class="fas fa-star"></i> Сжатие и растяжение (Squash and Stretch)</h4>
+                    <p>Придает объектам ощущение веса и гибкости при движении.</p>
+                </div>
+                
+                <div class="principle-card">
+                    <h4><i class="fas fa-star"></i> Подготовка (Anticipation)</h4>
+                    <p>Движение перед основным действием, подготавливающее зрителя.</p>
+                </div>
+                
+                <div class="w3-panel w3-light-grey w3-leftbar w3-border-orange">
+                    <p><i class="fas fa-lightbulb"></i> <strong>Совет:</strong> Эти принципы применимы как к 2D, так и к 3D анимации.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Лекция 2 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 2: 2D анимация</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>2.1 Программы для 2D анимации</h3>
+                
+                <div class="software-card">
+                    <h4><i class="fas fa-pencil-alt"></i> Adobe Animate</h4>
+                    <div class="w3-row-padding">
+                        <div class="w3-col m4">
+                            <img src="https://avatars.mds.yandex.net/i?id=03f352e434883a7e4e96bf94d7e29f72_l-5235392-images-thumbs&n=13" alt="Adobe Animate" class="lecture-image">
+                        </div>
+                        <div class="w3-col m8">
+                            <p>Профессиональный инструмент для создания векторной анимации и интерактивного контента.</p>
+                            <ul>
+                                <li>Поддержка формата .fla</li>
+                                <li>Экспорт в HTML5 Canvas</li>
+                                <li>Интеграция с другими продуктами Adobe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="software-card">
+                    <h4><i class="fas fa-film"></i> Toon Boom Harmony</h4>
+                    <p>Индустриальный стандарт для профессиональной 2D анимации, используемый в крупных студиях.</p>
+                </div>
+                
+                <h3>2.2 Техники 2D анимации</h3>
+                <table class="w3-table-all">
+                    <tr>
+                        <th>Техника</th>
+                        <th>Описание</th>
+                        <th>Сложность</th>
+                    </tr>
+                    <tr>
+                        <td>Покадровая</td>
+                        <td>Рисование каждого кадра вручную</td>
+                        <td>Высокая</td>
+                    </tr>
+                    <tr>
+                        <td>Кукольная</td>
+                        <td>Анимация отдельных частей персонажа</td>
+                        <td>Средняя</td>
+                    </tr>
+                    <tr>
+                        <td>Перекладка</td>
+                        <td>Движение готовых элементов</td>
+                        <td>Низкая</td>
+                    </tr>
+                </table>
+                
+                <div class="w3-panel w3-orange w3-round">
+                    <h4>Практическое задание</h4>
+                    <p>Создайте простую анимацию прыгающего мяча, используя принципы сжатия/растяжения и подготовки.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Лекция 3 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 3: 3D анимация</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>3.1 Процесс 3D анимации</h3>
+                <ol class="w3-ul">
+                    <li>Моделирование персонажа/объекта</li>
+                    <li>Создание скелета (риггинг)</li>
+                    <li>Настройка весов вершин</li>
+                    <li>Создание ключевых кадров</li>
+                    <li>Полировка анимации</li>
+                </ol>
+                
+                <div class="software-card">
+                    <h4><i class="fas fa-cube"></i> Autodesk Maya</h4>
+                    <div class="w3-row-padding">
+                        <div class="w3-col m4">
+                            <img src="https://i.pinimg.com/originals/43/23/d7/4323d7114dfd93023ade1688f26e79c1.jpg" alt="Autodesk Maya" class="lecture-image">
+                        </div>
+                        <div class="w3-col m8">
+                            <p>Индустриальный стандарт для 3D анимации, используемый в кино и играх.</p>
+                            <ul>
+                                <li>Мощная система риггинга</li>
+                                <li>График анимации (Graph Editor)</li>
+                                <li>Поддержка Python и MEL скриптов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>3.2 Ключевые кадры и интерполяция</h3>
+                <p>Основные понятия в 3D анимации:</p>
+                
+                <div class="w3-row-padding">
+                    <div class="w3-col m6">
+                        <div class="principle-card">
+                            <h4>Ключевые кадры (Keyframes)</h4>
+                            <p>Кадры, где заданы основные положения объекта. Программа автоматически рассчитывает промежуточные кадры.</p>
+                        </div>
+                    </div>
+                    <div class="w3-col m6">
+                        <div class="principle-card">
+                            <h4>Кривые интерполяции</h4>
+                            <p>Графики, определяющие как изменяются параметры между ключевыми кадрами (линейно, с ускорением и т.д.).</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w3-panel">
+                    <h4>Пример кода Maya MEL:</h4>
+                    <div class="w3-code">
+                        // Создание ключевого кадра для перемещения<br>
+                        setKeyframe -breakdown 0 -hierarchy none -controlPoints 0 -shape 0 {"pCube1.translateX"};<br>
+                        // Настройка интерполяции<br>
+                        keyTangent -inTangentType linear -outTangentType linear;
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+
+    <!-- Подвал -->
+    <footer class="w3-container w3-dark-grey w3-center w3-padding-16">
+        <p>© 2025 CreativeTech. Все права защищены.</p>
+    </footer>
+</body>
+</html>

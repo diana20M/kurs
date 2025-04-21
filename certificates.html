@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сертификаты | CreativeTech</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .certificate-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .certificate-preview {
+            border: 2px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Получаем параметр курса из URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const course = urlParams.get('course');
+            
+            if(course) {
+                showCertificateForm(course);
+            }
+            
+            // Обработчик для кнопки генерации
+            document.getElementById('generate-btn').addEventListener('click', function() {
+                const name = document.getElementById('cert-name').value;
+                if(name) {
+                    generateCertificate(name);
+                } else {
+                    alert('Пожалуйста, введите ваше имя');
+                }
+            });
+        });
+        
+        function showCertificateForm(course) {
+            const courseNames = {
+                'blender': 'Blender: Основы 3D моделирования',
+                'maya': 'Maya: Анимация персонажей',
+                'adobe': 'Adobe: Мультимедиа технологии'
+            };
+            
+            document.getElementById('course-title').textContent = courseNames[course] || 'выбранного курса';
+            document.getElementById('certificate-form').style.display = 'block';
+        }
+        
+        function generateCertificate(name) {
+            document.getElementById('certificate-form').style.display = 'none';
+            
+            const certPreview = document.getElementById('certificate-preview');
+            certPreview.innerHTML = `
+                <h3>Сертификат о прохождении курса</h3>
+                <p>Выдан: ${name}</p>
+                <p>За успешное прохождение курса "${document.getElementById('course-title').textContent}"</p>
+                <p>Дата: ${new Date().toLocaleDateString()}</p>
+                <div class="w3-padding-16">
+                    <i class="fas fa-certificate w3-jumbo w3-text-blue"></i>
+                </div>
+                <button class="w3-button w3-blue" onclick="printCertificate()">
+                    <i class="fas fa-print"></i> Распечатать
+                </button>
+            `;
+            certPreview.style.display = 'block';
+        }
+        
+        function printCertificate() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="w3-bar w3-light-grey">
+        <a href="index.html" class="w3-bar-item w3-button">Главная</a>
+        <a href="courses.html" class="w3-bar-item w3-button">Все курсы</a>
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="certificate-container">
+        <h1 class="w3-center">Получение сертификата</h1>
+        
+        <!-- Форма для ввода данных -->
+        <div id="certificate-form" class="w3-card w3-padding" style="display:none;">
+            <h3>Заполните данные для сертификата</h3>
+            <p>Вы получите сертификат о прохождении курса <span id="course-title"></span></p>
+            
+            <div class="w3-section">
+                <label>Ваше имя:</label>
+                <input id="cert-name" class="w3-input w3-border" type="text" required>
+            </div>
+            
+            <div class="w3-section">
+                <label>Email (для отправки копии):</label>
+                <input class="w3-input w3-border" type="email">
+            </div>
+            
+            <button id="generate-btn" class="w3-button w3-blue">
+                <i class="fas fa-certificate"></i> Сгенерировать сертификат
+            </button>
+        </div>
+        
+        <!-- Превью сертификата -->
+        <div id="certificate-preview" class="certificate-preview" style="display:none;"></div>
+        
+        <!-- Если нет параметра курса -->
+        <div id="no-course-selected" class="w3-panel w3-light-grey" style="display:block;">
+            <h3>Выберите курс</h3>
+            <p>Для получения сертификата перейдите по ссылке "Получить сертификат" на странице курса.</p>
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-third">
+                    <a href="blender-course.html" class="w3-button w3-blue w3-block">Курс Blender</a>
+                </div>
+                <div class="w3-third">
+                    <a href="maya-course.html" class="w3-button w3-green w3-block">Курс Maya</a>
+                </div>
+                <div class="w3-third">
+                    <a href="adobe-course.html" class="w3-button w3-purple w3-block">Курс Adobe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="w3-container w3-dark-grey w3-center w3-padding-16">
+        <p>© 2023 CreativeTech. Все права защищены.</p>
+    </footer>
+</body>
+</html>

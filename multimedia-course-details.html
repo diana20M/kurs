@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мультимедиа технологии | CreativeTech</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .lecture-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .lecture-card {
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .lecture-header {
+            background-color: #009688; /* Teal */
+            color: white;
+            padding: 15px;
+        }
+        .lecture-content {
+            padding: 20px;
+            background-color: white;
+        }
+        .lecture-image {
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .tool-card {
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 4px solid #009688;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <div class="w3-bar w3-light-grey">
+        <a href="index.html" class="w3-bar-item w3-button">Главная</a>
+        <a href="courses.html" class="w3-bar-item w3-button">Все курсы</a>
+       
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="lecture-container">
+        <!-- Лекция 1 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 1: Основы мультимедиа</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>1.1 Что такое мультимедиа?</h3>
+                <p>Мультимедиа - это контент, который использует комбинацию различных форм информации (текст, аудио, изображения, анимация, видео).</p>
+                
+                <div class="w3-row-padding">
+                    <div class="w3-col m6">
+                        <img src="https://avatars.mds.yandex.net/i?id=cb05b0e38dfb2de431fb51dda0b738e7_l-4842841-images-thumbs&n=13" alt="Компоненты мультимедиа" class="lecture-image">
+                    </div>
+                    <div class="w3-col m6">
+                        <h4>Основные компоненты:</h4>
+                        <ul class="w3-ul">
+                            <li><i class="fas fa-image"></i> Графика и изображения</li>
+                            <li><i class="fas fa-music"></i> Аудио и звук</li>
+                            <li><i class="fas fa-video"></i> Видео и анимация</li>
+                            <li><i class="fas fa-text-height"></i> Текст и типографика</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="w3-panel w3-light-grey w3-leftbar w3-border-teal">
+                    <p><i class="fas fa-lightbulb"></i> <strong>Интересный факт:</strong> Современные мультимедийные приложения часто используют интерактивность для улучшения пользовательского опыта.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Лекция 2 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 2: Работа с аудио</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>2.1 Основы аудио обработки</h3>
+                <p>Работа с аудио включает запись, редактирование и микширование звуковых дорожек.</p>
+                
+                <div class="tool-card">
+                    <h4><i class="fas fa-headphones"></i> Audacity</h4>
+                    <p>Бесплатный аудиоредактор с открытым исходным кодом. Подходит для:</p>
+                    <ul>
+                        <li>Записи звука</li>
+                        <li>Обрезки и редактирования</li>
+                        <li>Применения эффектов</li>
+                    </ul>
+                </div>
+                
+                <h3>2.2 Форматы аудио файлов</h3>
+                <table class="w3-table-all">
+                    <tr>
+                        <th>Формат</th>
+                        <th>Описание</th>
+                        <th>Использование</th>
+                    </tr>
+                    <tr>
+                        <td>MP3</td>
+                        <td>Сжатый с потерями</td>
+                        <td>Музыка, подкасты</td>
+                    </tr>
+                    <tr>
+                        <td>WAV</td>
+                        <td>Без сжатия</td>
+                        <td>Профессиональная запись</td>
+                    </tr>
+                    <tr>
+                        <td>FLAC</td>
+                        <td>Сжатый без потерь</td>
+                        <td>Аудиофильские записи</td>
+                    </tr>
+                </table>
+                
+                <div class="w3-panel w3-teal w3-round">
+                    <h4>Практическое задание</h4>
+                    <p>Запишите короткий голосовой фрагмент и обработайте его в Audacity: обрежьте, добавьте эффект эха и экспортируйте в MP3.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Лекция 3 -->
+        <div class="w3-card lecture-card">
+            <div class="lecture-header">
+                <h2>Лекция 3: Видео производство</h2>
+            </div>
+            <div class="lecture-content">
+                <h3>3.1 Основы видеомонтажа</h3>
+                <p>Процесс видеомонтажа включает несколько этапов:</p>
+                <ol class="w3-ul">
+                    <li>Импорт и организация материалов</li>
+                    <li>Редактирование временной шкалы</li>
+                    <li>Добавление переходов и эффектов</li>
+                    <li>Цветокоррекция и градирование</li>
+                    <li>Экспорт финального видео</li>
+                </ol>
+                
+                <div class="tool-card">
+                    <h4><i class="fas fa-film"></i> Adobe Premiere Pro</h4>
+                    <p>Профессиональный инструмент для видеомонтажа с широкими возможностями:</p>
+                    <div class="w3-row-padding">
+                        <div class="w3-col m6">
+                            <img src="https://files.vgtimes.ru/posts/2024-10/adobe-predstavila-ii-dlya-generacii-video-po-tekstu-i-izobrazheniyam-v-premiere-pro-113764.webp?1728981445" alt="Premiere Pro" class="lecture-image">
+                        </div>
+                        <div class="w3-col m6">
+                            <ul>
+                                <li>Многодорожечный монтаж</li>
+                                <li>Интеграция с After Effects</li>
+                                <li>Поддержка 4K и HDR</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>3.2 Основные видео форматы</h3>
+                <div class="w3-responsive">
+                    <table class="w3-table-all">
+                        <tr>
+                            <th>Формат</th>
+                            <th>Разрешение</th>
+                            <th>Частота кадров</th>
+                            <th>Использование</th>
+                        </tr>
+                        <tr>
+                            <td>1080p</td>
+                            <td>1920×1080</td>
+                            <td>24/30/60 fps</td>
+                            <td>Full HD видео</td>
+                        </tr>
+                        <tr>
+                            <td>4K</td>
+                            <td>3840×2160</td>
+                            <td>24/30 fps</td>
+                            <td>Кино и премиум контент</td>
+                        </tr>
+                        <tr>
+                            <td>720p</td>
+                            <td>1280×720</td>
+                            <td>30 fps</td>
+                            <td>Веб-видео</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+
+    <!-- Подвал -->
+    <footer class="w3-container w3-dark-grey w3-center w3-padding-16">
+        <p>© 2025 CreativeTech. Все права защищены.</p>
+    </footer>
+</body>
+</html>

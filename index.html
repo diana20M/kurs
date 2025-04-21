@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeTech - Курсы моделирования и анимации</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигационная панель как в W3Schools -->
+    <div class="w3-bar w3-light-grey w3-card">
+        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue w3-text-blue"><b>CREATIVETECH</b></a>
+        <div class="w3-right">
+            <a href="courses.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue">Курсы</a>
+            <a href="certificates.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue">Сертификаты</a>
+           
+            <div class="w3-bar-item">
+                <input type="text" class="w3-input w3-border" placeholder="Поиск...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <div class="w3-main w3-container" style="margin-top:50px">
+        <!-- Блок "Начните с основ" -->
+        <div class="w3-panel w3-light-grey w3-padding-16 w3-card">
+            <h1><b>Курсы компьютерного моделирования и анимации</b></h1>
+            <p>Изучите современные технологии создания 3D моделей и анимации</p>
+        </div>
+
+        <!-- Карточки курсов -->
+        <div class="w3-row-padding" style="margin-top:32px">
+            <!-- Курс 1: Моделирование -->
+            <div class="w3-third">
+                <div class="w3-card">
+                    <div class="w3-container w3-center w3-blue">
+                        <h3>Компьютерное моделирование</h3>
+                    </div>
+                    <div class="w3-container w3-light-grey w3-padding-16">
+                        <p>Основы 3D моделирования в Blender</p>
+                        <div class="w3-bar w3-center">
+                            <a href="blender-course-details.html" class="w3-button w3-blue">Изучите</a>
+                            <a href="https://youtu.be/uWLQjDaCf0Q" class="w3-button w3-green">Видеоурок</a>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-center w3-light-grey">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <!-- Курс 2: Мультимедиа -->
+            <div class="w3-third">
+                <div class="w3-card">
+                    <div class="w3-container w3-center w3-teal">
+                        <h3>Мультимедиа технологии</h3>
+                    </div>
+                    <div class="w3-container w3-light-grey w3-padding-16">
+                        <p>Работа с аудио, видео и графикой</p>
+                        <div class="w3-bar w3-center">
+                            <a href="multimedia-course-details.html" class="w3-button w3-teal">Изучите</a>
+                            <a href="https://youtu.be/2RxmQXKuvB0?si=OTXpwXyk08Q2Y547" class="w3-button w3-green">Видеоурок</a>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-center w3-light-grey">
+                 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Курс 3: Анимация -->
+            <div class="w3-third">
+                <div class="w3-card">
+                    <div class="w3-container w3-center w3-orange">
+                        <h3>Компьютерная анимация</h3>
+                    </div>
+                    <div class="w3-container w3-light-grey w3-padding-16">
+                        <p>Создание 2D и 3D анимации</p>
+                        <div class="w3-bar w3-center">
+                            <a href="animation-course-details.html" class="w3-button w3-orange">Изучите</a>
+                            <a href="https://youtu.be/D465gc8hLEQ?si=tNj5-G8xHNwhWtIj" class="w3-button w3-green">Видеоурок</a>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-center w3-light-grey">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок "Попробуйте сами" -->
+        <div class="w3-panel w3-light-grey w3-padding-16 w3-card" style="margin-top:32px">
+            <h2><b>Попробуйте сами</b></h2>
+            <div class="w3-code htmlHigh">
+                // Пример кода моделирования<br>
+                import bpy<br>
+                bpy.ops.mesh.primitive_cube_add(size=2)<br>
+                bpy.ops.transform.resize(value=(1, 2, 0.5))
+            </div>
+            <button class="w3-button w3-green w3-margin-top">Попробовать онлайн</button>
+        </div>
+
+        <!-- Быстрые ссылки -->
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col m4">
+                <h3>Blender</h3>
+                <p>3D моделирование и анимация</p>
+                <a href="https://habr.com/ru/companies/productivity_inside/articles/328064/" class="w3-button w3-blue">Изучить</a>
+            </div>
+            <div class="w3-col m4">
+                <h3>Adobe After Effects</h3>
+                <p>Создание визуальных эффектов</p>
+                <a href="https://skillbox.kz/course/after-effects/" class="w3-button w3-purple">Изучить</a>
+            </div>
+            <div class="w3-col m4">
+                <h3>AutoCAD</h3>
+                <p>Профессиональное CAD моделирование</p>
+                <a href="https://uc.l-p.kz/courses/autocad_basic/?utm_term=%7Byandex%7D&yclid=16165842627039330303" class="w3-button w3-red">Изучить</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+        <p>© 2025 CreativeTech. Все права защищены.</p>
+        <div class="w3-right">
+            <a href="https://www.facebook.com/" class="fab fa-facebook w3-hover-opacity w3-large"></i>
+            <a href="http://youtube.com" class="fab fa-youtube w3-hover-opacity w3-large"></i>
+            <a href="https://www.instagram.com" class="fab fa-instagram w3-hover-opacity w3-large"></i>
+        </div>
+    </footer>
+</body>
+</html>

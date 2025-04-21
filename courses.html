@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeTech - Все курсы</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <div class="w3-bar w3-light-grey w3-card">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue w3-text-blue"><b>CREATIVETECH</b></a>
+        <div class="w3-right">
+            <a href="courses.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue w3-text-blue">Курсы</a>
+            <a href="certificates.html" class="w3-bar-item w3-button w3-hover-none w3-hover-text-blue">Сертификаты</a>
+           
+            <div class="w3-bar-item">
+                <input type="text" class="w3-input w3-border" placeholder="Поиск...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Основное содержимое страницы курсов -->
+    <div class="w3-main w3-container" style="margin-top:50px">
+        <h1 class="w3-text-blue"><b>Все курсы</b></h1>
+        
+        <!-- Фильтры курсов -->
+        <div class="w3-row w3-margin-bottom">
+            <div class="w3-col m3">
+                <select class="w3-select w3-border">
+                    <option>Все категории</option>
+                    <option>Моделирование</option>
+                    <option>Анимация</option>
+                    <option>Мультимедиа</option>
+                </select>
+            </div>
+            <div class="w3-col m3">
+                <select class="w3-select w3-border">
+                    <option>Все уровни</option>
+                    <option>Начинающий</option>
+                    <option>Средний</option>
+                    <option>Продвинутый</option>
+                </select>
+            </div>
+            <div class="w3-col m6">
+               
+            </div>
+        </div>
+        
+        <!-- Список курсов -->
+        <div class="w3-row-padding">
+            <!-- Курс 1 -->
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="https://pic.rutubelist.ru/video/6a/fa/6afa49585666db1aa27ad20a094d6280.jpg" style="width:100%">
+                    <div class="w3-container">
+                        <h4><b>Blender: Основы 3D моделирования</b></h4>
+                        <p>Изучите основы работы в Blender с нуля</p>
+                        <div class="w3-row">
+                            <div class="w3-half">
+                                <span class="w3-tag w3-blue">Начинающий</span>
+                            </div>
+                            <div class="w3-half w3-right-align">
+                                <span class="w3-text-grey">24 урока</span>
+                            </div>
+                        </div>
+                        <div class="w3-bar w3-margin-top">
+                            <a href="blender-course.html" class="w3-button w3-blue">Подробнее</a>
+                            <span class="w3-right w3-padding">4.8 <i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Курс 2 -->
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=62b10a1ff7795e205ac2fb4f196a696d_l-9068727-images-thumbs&n=13" style="width:100%">
+                    <div class="w3-container">
+                        <h4><b>Анимация персонажей в Maya</b></h4>
+                        <p>Основы анимации и риггинга персонажей</p>
+                        <div class="w3-row">
+                            <div class="w3-half">
+                                <span class="w3-tag w3-green">Средний</span>
+                            </div>
+                            <div class="w3-half w3-right-align">
+                                <span class="w3-text-grey">18 уроков</span>
+                            </div>
+                        </div>
+                        <div class="w3-bar w3-margin-top">
+                            <a href="maya-course.html" class="w3-button w3-blue">Подробнее</a>
+                            <span class="w3-right w3-padding">4.9 <i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Курс 3 -->
+            <div class="w3-col m4 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=b1083758f18a2de6a21ce82039593f67_l-5877649-images-thumbs&n=13" style="width:100%">
+                    <div class="w3-container">
+                        <h4><b>Мультимедиа в Adobe Creative Cloud</b></h4>
+                        <p>Интеграция Photoshop, Premiere и After Effects</p>
+                        <div class="w3-row">
+                            <div class="w3-half">
+                                <span class="w3-tag w3-orange">Продвинутый</span>
+                            </div>
+                            <div class="w3-half w3-right-align">
+                                <span class="w3-text-grey">32 урока</span>
+                            </div>
+                        </div>
+                        <div class="w3-bar w3-margin-top">
+                            <a href="adobe-course.html" class="w3-button w3-blue">Подробнее</a>
+                            <span class="w3-right w3-padding">4.7 <i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
